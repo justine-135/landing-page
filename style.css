@@ -75,6 +75,13 @@ button {
 	border: 4px solid #5b9eec;
 	color: #5b9eec;
 	font-weight: 700;
+	cursor: pointer;
+	transition: 200ms ease;
+}
+
+.buy-btn button:hover {
+	background-color: #5b9eec;
+	color: white;
 }
 
 .navbar li :hover {
@@ -136,13 +143,20 @@ main {
 .cta-btn {
 	padding: 0.5rem 1rem;
 	border-radius: 30px;
-	border: none;
+	border: 4px solid white;
 	font-size: 1.8rem;
 	font-weight: 600;
 	background-image: linear-gradient(to right, #ff8c00, #fde509);
 	color: white;
 	cursor: pointer;
 	width: 50%;
+	transition: 200ms ease;
+}
+
+.cta-btn:hover {
+	background-image: linear-gradient(to right, white, white);
+	color: #f38400;
+	border: 4px solid #f38400;
 }
 
 .footer-text {
@@ -193,18 +207,19 @@ footer {
 		width: 100%;
 	}
 	.svg-bg {
-		height: 100%;
-		border-radius: 50%;
-		width: 50%;
+		/* height: 400px;
+		width: 600px;
+		min-height: 100px;
+		min-width: 200px; */
 		overflow: hidden;
 		margin: 0px auto;
 	}
 	.large-img {
-		background: url(whiteSaquiChar.png);
-		height: 80%;
-		width: 80%;
+		/* background: url(whiteSaquiChar.png);
+		height: 100%;
+		width: 100%;
 		background-position: center;
-		background-size: cover;
+		background-size: cover; */
 		position: absolute;
 		bottom: 0%;
 		left: 50%;
@@ -241,7 +256,17 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
+	.svg-bg {
+		height: 400px;
+		width: 450px;
+	}
+	.large-img {
+		height: 100%;
+		width: 100%;
+	}
+
 	footer {
+		margin-top: 100px;
 		display: flex;
 		height: 10vh;
 		width: 100%;
@@ -261,13 +286,7 @@ footer {
 		color: #5b9eec;
 		font-weight: 700;
 	}
-	.svg-bg {
-		border-radius: 50%;
-		width: 80%;
-	}
-	.large-img {
-		width: 90%;
-	}
+
 	.navbar ul li {
 		display: none;
 	}
@@ -329,26 +348,36 @@ footer {
 	}
 }
 
-@media screen and (max-width: 593px) {
+@media screen and (max-width: 573px) {
 	.svg-bg {
-		margin-top: 30px;
+		margin: 30px auto;
 	}
 }
 
-@media screen and (max-width: 520px) {
-	.intro {
-		height: 100%;
-	}
+@media screen and (max-width: 506px) {
 	.svg-bg {
-		margin-top: 100px;
-	}
-	footer {
-		margin-top: 150px;
+		margin: 50px auto;
+		height: 300px;
+		width: 350px;
 	}
 }
 
-@media screen and (max-width: 345px) {
+@media screen and (max-width: 408px) {
 	.svg-bg {
-		margin-top: 150px;
+		margin: 80px auto;
+	}
+}
+
+@media screen and (max-width: 348px) {
+	.svg-bg {
+		margin: 120px auto;
+		height: 200px;
+		width: 250px;
+	}
+}
+
+@media screen and (max-width: 320px) {
+	.svg-bg {
+		margin: 150px auto;
 	}
 }
